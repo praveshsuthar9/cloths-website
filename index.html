@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trends</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+    <!-- ---------font-awesome-link------------ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-container">
+          <div class="logo">
+            <h1>Trends</h1>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#home-page" id="home" onclick="Home()">Home</a></li>
+              <li><a href="#shop-page" id="shop" onclick="Shop()">Shops</a></li>
+              <li><a href="#blog-page" id="blog" onclick="Blog()">Blog</a></li>
+              <li>
+                <a href="#about-page" id="about" onclick="About()">About</a>
+              </li>
+              <li>
+                <a href="#contact-page" id="contact" onclick="Contact()"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-sharp fa-solid fa-cart-shopping"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+          <div class="menu-icon">
+            <i class="fa-sharp fa-solid fa-bars" id="menu-btn"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="home-page">
+        <div class="container">
+          <div class="home-page">
+            <div class="home-content">
+              <h6>Trends...</h6>
+              <h1><span>Super Value Deals</span><br />On All Products</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Sapiente, sit.
+              </p>
+              <div class="home-btn">
+                <button>Explore</button>
+              </div>
+            </div>
+            <div class="home-image">
+              <img src="images/home-img.png" alt="image" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="shop-page">
+        <div class="container">
+          <div class="shop-cont">
+            <h2>Trends <span>Men's Wear</span></h2>
+            <div class="product-container">
+              <div class="product-card">
+                <div class="product-img">
+                  <img src="images/T-shart.png" alt="" onclick="show(this)" />
+                </div>
+                <div class="product-info">
+                  <p>Cutton Trending T-Shart's</p>
+                  <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <div class="add-btn">
+                    <button>Add To Cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-img">
+                  <img src="images/men-img.png" alt="" onclick="show(this)" />
+                </div>
+                <div class="product-info">
+                  <p>Cutton Trending T-Shart's</p>
+                  <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <div class="add-btn">
+                    <button>Add To Cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-img">
+                  <img src="images/T-shart-2.png" alt="" onclick="show(this)" />
+                </div>
+                <div class="product-info">
+                  <p>Cutton Trending T-Shart's</p>
+                  <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <div class="add-btn">
+                    <button>Add To Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="shop-women">
+        <div class="container">
+          <div class="shop-cont">
+            <h2>Trends <span>Women's Wear</span></h2>
+            <div class="product-container">
+              <div class="product-card">
+                <div class="product-img">
+                  <img
+                    src="images/women-cloth-2.png"
+                    onclick="show(this)"
+                    alt=""
+                  />
+                </div>
+                <div class="product-info">
+                  <p>Women's Cloth</p>
+                  <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <div class="add-btn">
+                    <button id="addBtn" onclick="add()">Add To Cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-img">
+                  <img
+                    src="images/women-cloth-3.png"
+                    alt=""
+                    onclick="show(this)"
+                  />
+                </div>
+                <div class="product-info">
+                  <p>Women's Cloth</p>
+                  <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <div class="add-btn">
+                    <button id="addBtn-2" onclick="add2()">Add To Cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card">
+                <div class="product-img">
+                  <img
+                    src="images/women-clotth-1.png"
+                    alt=""
+                    onclick="show(this)"
+                  />
+                </div>
+                <div class="product-info">
+                  <p>Women's Cloth</p>
+                  <div class="star">
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                    <span><i class="fa-solid fa-star"></i></span>
+                  </div>
+                  <div class="add-btn">
+                    <button id="addBtn-3" onclick="add3()">Add To Cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="blog-page">
+        <div class="container">
+          <div class="blog-container">
+            <h3>Trends Top <span>Blog's</span></h3>
+            <div class="blog-cont">
+              <div class="blog-card">
+                <div class="blog-img">
+                  <img src="images/women-cloth-2.png" alt="Girls-img" />
+                </div>
+                <div class="blog-content">
+                  <h6>Trending Girl Cloths</h6>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ratione, velit?
+                  </p>
+                  <a href="" class="blog-btn">Read More</a>
+                </div>
+              </div>
+              <div class="blog-card">
+                <div class="blog-img">
+                  <img src="images/men-cloth.jpg" alt="Men-img" />
+                </div>
+                <div class="blog-content">
+                  <h6>Trending Boys Cloths</h6>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ratione, velit?
+                  </p>
+                  <a href="" class="blog-btn">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about-page">
+        <div class="container">
+          <div class="about-container">
+            <div class="about-head">
+              <h4>#Know Us...</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore, exercitationem!
+              </p>
+            </div>
+            <div class="about-cont">
+              <div class="about-card">
+                <div class="about-img">
+                  <img src="images/desktop-2.jpeg" alt="destop" />
+                </div>
+                <div class="about-content">
+                  <h6>Who we are ?</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sunt beatae veritatis dolorum nobis quidem voluptate, ea
+                    possimus impedit perspiciatis voluptates quaerat esse
+                    eligendi quae consequuntur nam sint sapiente vel illum
+                    debitis, dignissimos, nostrum eaque atque! Ex sapiente nihil
+                    eaque vitae, reiciendis fuga quasi soluta voluptatem
+                    voluptas natus facere mollitia architecto.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact-page">
+        <div class="container">
+          <div class="contact-container">
+            <div class="contact-head">
+              <h4>#Let's Connect...</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore, exercitationem!
+              </p>
+            </div>
+            <div class="contact-cont">
+              <div class="contact-card">
+                <div class="contact-content">
+                  <h6>Visit Our Office or Contact <br />Us Today?</h6>
+                  <p>Address: Dabin Park England, NEw york</p>
+                  <p>Contact: Dumiemail@gmail.com</p>
+                  <p>NUmber: 8899667722</p>
+                </div>
+                <div class="contact-img">
+                  <img src="images/map-img.jpeg" alt="destop" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------------------add-image--------- -->
+      <div class="show-card">
+        <div class="show-img">
+          <img id="newimg" src="" alt="" />
+        </div>
+        <div class="show-content">
+          <h1>Trends Offer : Trending Show <br />Now</h1>
+          <h2>Special Price</h2>
+          <h2>$11</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,
+            temporibus!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,
+            temporibus!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,
+            temporibus!
+          </p>
+          <div class="buy-btn">
+            <button id="buy">Buy Now</button>
+            <button onclick="add()">Add To Cart</button>
+          </div>
+          <div class="back">
+            <button id="back" onclick="back()">Back</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-head">
+          <div class="sign">
+            <h6>Sign Up for NewsLetter</h6>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo,
+              cum.
+            </p>
+          </div>
+          <div class="input">
+            <input
+              type="email"
+              placeholder="Enter Email Address"
+              name="email"
+              id=""
+            />
+            <button>Sign Up</button>
+          </div>
+        </div>
+        <div class="link-container">
+          <div class="link">
+            <h6>Trends</h6>
+            <p>Service</p>
+            <p>Customer</p>
+            <p>Satisfation</p>
+          </div>
+          <div class="link">
+            <h6>About Us</h6>
+            <p>
+              Address: Lorem ipsum dolor, <br />sit amet consectetur adipisicing
+              elit. Ipsam,<br />
+              repellat placeat debitis aperiam rem
+            </p>
+            <p>Service</p>
+            <p>Customer</p>
+            <p>Satisfation</p>
+          </div>
+          <div class="link">
+            <h6>Contact</h6>
+            <p>7665272820</p>
+            <p>Customer</p>
+            <p>Comming up...</p>
+            <p>New Arp</p>
+          </div>
+
+          <div class="link">
+            <h6>Trending</h6>
+            <p>Service</p>
+            <p>Customer</p>
+            <p>SHops</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
